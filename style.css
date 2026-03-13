@@ -107,7 +107,7 @@ p{
 .statics{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   margin-top: 5%;
 }
@@ -123,11 +123,10 @@ p{
   width: 125px;
   height: 50px;
   border-radius: 40px;
-  text-align: center;
-  justify-content: center;
   display: flex;
   align-items: center;
   text-align: center;
+  justify-content: center;
 }
 .statics p{
   font-size: 90%;
@@ -177,7 +176,8 @@ th .info{
   align-items: center;
   justify-content: center;
 
-  width: 70px;
+  max-width: 70px;
+  min-width: 60px;
   height: 30px;
 
   color: #cfe3ff;
