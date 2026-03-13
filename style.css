@@ -2,14 +2,13 @@ body{
   background-color: #090B0F;
   color: #dae1f1;
 
-  margin-left: 5%;
-  margin-right: 5%;
+  margin:5%;
   min-height: 80vh;
   gap: 5px;
 
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 .perfil, .aba1, .aba3{
@@ -112,6 +111,7 @@ p{
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
+  margin-top: 5%;
 }
 .elemento{
   width: 120px;
@@ -137,10 +137,10 @@ p{
   background-color: #212e4e;
   border: 1px solid #96b3df;
 }
-.mod_habilidade{
+.aba1 .titulo{
   width: 100%;
 }
-.mod_habilidade .cabecalho{
+.aba1 .titulo .cabecalho{
   height: 50px;
   width: 100%;
   display: flex;
@@ -150,28 +150,26 @@ p{
   font-size: 20px;
 }
 table{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-collapse: separate;
   border-spacing: 15px;
   font-size: 14px;
+  width: 100%;
+  table-layout: fixed;
 }
 td:not(.pol){
   border: 2px solid #212e4e;
-  width: 100px;
   height: 30px;
 }
-th .info{
-  height: 12px;
-  font-size: 9px;
-  margin-top: -20px;
-}
-td .info{
+td .info, th .info{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   height: 20px;
+  color: #ffffff;
+}
+th .info{
+  height: 15px;
+  font-size: 9px;
 }
 .pol{
   display: inline-flex;
@@ -193,10 +191,25 @@ td .info{
     0% 50%
   );
 }
-.aba1{
+.aba1, .aba3{
   height: 100%;
   margin-top: 0;
   background-color: #091929;
-  border-right: 4px solid #314575;
-  border-left: 4px solid #314575;
+  border: 3px solid #314575;
+}
+button{
+  width: 100%;
+  height: 100%;
+  background-color: #091929;
+  border: none;
+}
+button:active{
+  background-color: #314575;
+}
+.atributos td img{
+  margin-left: 4px;
+}
+td img{
+  height: 20px;
+  width: 20px;
 }
