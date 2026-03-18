@@ -229,9 +229,6 @@ button:not(.button_aba3){
 .aba1 button:active{
   background-color: #314575;
 }
-.atributos td img{
-  margin-left: 4px;
-}
 td img{
   height: 20px;
   width: 20px;
@@ -239,5 +236,20 @@ td img{
 .aba3 .cabecalho{
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+}
+.inventario{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+.inventario img{
+  transform: rotate(45deg);
+  transform-origin: center;
 }
