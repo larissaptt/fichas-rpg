@@ -11,11 +11,72 @@ body{
   justify-content: space-around;
   flex-wrap: wrap;
 }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #364775;
+  color: white;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.menu-icon{
+  cursor:pointer;
+}
+#menu-toggle{
+  display:none;
+}
+.menu{
+  position:absolute;
+  top:60px;
+  right:20px;
+
+  min-width:160px;
+  padding:10px 0;
+
+  background:#314575;
+
+  display:none;
+  flex-direction:column;
+  gap:5px;
+
+  border-radius:8px;
+  border: 2px solid #96b3df;
+}
+
+.menu a{
+  display:block;
+  padding:8px 15px;
+  color:white;
+  text-decoration:none;
+}
+
+.menu-icon img{
+  height:30px;
+  display:block;
+}
+#menu-toggle:checked + .menu-icon + .menu{
+  display:flex;
+}
+.img_logo{
+  height: 55px;
+}
 .perfil, .aba1, .aba3{
   width: 100%;
   max-width: 450px;
   display: flex;
   flex-direction: column;
+  margin-top: 15px;
+  border-radius: 20px;
 }
 .perfil{
   align-items: center;
@@ -162,6 +223,7 @@ body{
   width: 100%;
   background-color: #314575;
   font-size: 20px;
+  border-radius: 10px;
 }
 table{
   border-collapse: separate;
@@ -207,7 +269,6 @@ th .info{
 }
 .aba1, .aba3{
   height: 100%;
-  margin-top: 0;
   background-color: #091929;
   border: 3px solid #314575;
 }
@@ -222,6 +283,7 @@ button:not(.button_aba3){
 }
 .button_aba3{
   background-color: #314575;
+  border-radius: 10px;
 }
 .button_aba3:active{
   background-color: #091929;
