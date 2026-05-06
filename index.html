@@ -507,55 +507,49 @@
     </div>
     <div class="aba3">
 
-    <div class="titulo">
-        <div class="cabecalho">
-            <button class="button_aba3" onclick="trocarAba('inventario')">Inventário</button>
-            <button class="button_aba3" onclick="trocarAba('feiticos')">Feitiços</button>
-            <button class="button_aba3" onclick="trocarAba('habilidades')">Habilidades</button>
+        <div class="titulo">
+            <div class="cabecalho">
+                <button class="button_aba3" onclick="trocarAba('inventario')">Inventário</button>
+                <button class="button_aba3" onclick="trocarAba('feiticos')">Feitiços</button>
+                <button class="button_aba3" onclick="trocarAba('habilidades')">Habilidades</button>
+            </div>
         </div>
-    </div>
-
-    <div id="inventario" class="aba">
-
-        <div class="head">
-            <img src="imagens/quadrado.png">
-            <h1>Inventário</h1>
-            <img src="imagens/quadrado.png">
-        </div>
-
-        <table class="junto">
-            <tr>
-                <td class="lado">
+        
+        
+        <!-- INVENTÁRIO -->
+        <div id="inventario" class="aba ativa">
+        
+            <div class="head">
+                <img src="imagens/quadrado.png">
+                <h1>Inventário</h1>
+                <img src="imagens/quadrado.png">
+            </div>
+            <table class="junto">
+                <tr> <td class="lado">
                     <div class="info">
                         <p>Capacidade de peso</p><br>
                         <p>225lbs</p>
                     </div>
                 </td>
-
                 <td class="espaco"></td>
-
                 <td class="lado">
                     <div class="info">
                         <p>Carregando</p><br>
                         <p>19lbs</p>
                     </div>
                 </td>
-            </tr>
-        </table>
-
+                </tr>
+            </table>
         <div class="inv_carregando">
-
+            
             <table style="width:100%">
-
                 <tr>
                     <td style="width:20%">
                         <div class="info">Equipar</div>
-                    </td>
-
+                    </td> 
                     <td style="width:60%">
                         <div class="info">Nome</div>
                     </td>
-
                     <td style="width:20%">
                         <div class="info">Qnt</div>
                     </td>
@@ -568,29 +562,87 @@
                         <button class="adicionar_inv">+</button>
                     </td>
                 </tr>
-                
-
             </table>
-
-        </div>
-        <div id="popup_armas" class="popup">
-
-            <div class="popup_conteudo">
-
-                <button id="fechar_popup">X</button>
-
-                <h2>Adicionar item</h2>
-
-                <div id="lista_armas"></div>
-
-                <div id="detalhes_arma"></div>
-
+        
             </div>
-
+        
         </div>
-
-</div>
-    </div>
+        
+        
+        <!-- FEITIÇOS -->
+        <div id="feiticos" class="aba">
+        
+            <div class="head">
+                <img src="imagens/quadrado.png">
+                <h1>Feitiços</h1>
+                <img src="imagens/quadrado.png">
+            </div>
+            
+            <table class="junto">
+    
+                <thead class="subtitulo">
+                    <tr>
+                        <th>Habilidade de feitiço</th>
+                        <th>DT de feitiço</th>
+                        <th>Bônus</th>
+                    </tr>
+                </thead>
+            
+                <tbody>
+                    <tr class="feit"> 
+                        <td class="lado">
+                            <div class="info">
+                                <p>Inteligência</p>
+                            </div>
+                        </td>
+            
+                        <td class="lado">
+                            <div class="info">
+                                <p>16</p>
+                            </div>
+                        </td>
+            
+                        <td class="lado">
+                            <button class="botao_feitico">
+                                <p class="lanc_feitico">+8</p>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            
+            </table>
+        
+        
+        <!-- HABILIDADES -->
+        <div id="habilidades" class="aba">
+        
+            <div class="head">
+                <img src="imagens/quadrado.png">
+                <h1>Habilidades</h1>
+                <img src="imagens/quadrado.png">
+            </div>
+        
+            <p>Conteúdo das habilidades aqui.</p>
+        
+        </div>
+        
+        
+        <!-- POPUP -->
+        <div id="popup_armas" class="popup">
+        
+            <div class="popup_conteudo">
+        
+                <button id="fechar_popup">X</button>
+        
+                <h2>Adicionar item</h2>
+        
+                <div id="lista_armas"></div>
+        
+                <div id="detalhes_arma"></div>
+        
+            </div>
+        
+        </div>
     <div id="resultado_dado">
         <div class="dado">
             <button id="fechar_resultado">x</button>
